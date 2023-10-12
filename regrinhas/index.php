@@ -25,6 +25,8 @@
   
   echo "<h3>Tipos Números</h3>.<p>O PHP tem formas diferentes de representar números e cada um deles vai começar com um 'código'</p><p>1. hexadecimal - 0x .Ex: 0x1A é um número em hexadecimal, se vc escrever isso no código, vai retornar: 26</p><p>2. Binário - 0b Ex: 0b1011 é um número em binário, se vc escrever isso no código, vai retornar: 11</p><p>3. Octal - 0. Ex: 010 é um número em octal, se vc escrever isso no código, vai retornar 8</p><p>Ou seja, é importante prestar atenção na forma de escrever os números porque dependendo da forma que você escrever ele pode retornar um número totalmente diferente por estar interpretando ele com base em alguma dessas regras</p>";
 
+  echo "<h3>Os 4 Tipos de String</h3>.<p>1. Double Quoted - Aspas duplas \"\", nela há interpretação de conteúdo dando até pra usar emojis. Ex: escrevi: \ u{1F418}, apareceu: \u{1F418}. </br></br>Ou seja, se você precisar que a String interprete uma variável, por exemplo, vai precidar usar a Double Quoted. Para constantes será necessário fazer a concatenação com o operador '.' que é o ponto. Ex: </br></br>const ESTADO = RJ; </br>echo ''Moro no''.ESTADO;. </br></br>Além das constantes, isso pode acontecer para resultados de funções também, como de data por exemplo.</p><p>2. Single Quoted - Aspas simples ' ', não interpreta o conteúdo, nem emojis, variáveis, constantes, nada. É possível colocar aspas duplas dentro de aspas simples ou aspas simples dentro de aspas duplas</p><p>3. Heredoc - 3 sinais de menor e uma palavra em maiúsculo. Ex:</br></br> <<< TESTE</br> BLABLA</br>BLA</br>TESTE;</br></br> Você pode escrever o que quiser, ele interpreta tudo e ainda interpreta multiplas linhas, ou seja, vc escreve ENTER normal como se fosse um texto no word e ele vai interpretar</p><p>4. Nowdoc - Igual a Here doc mas não interpreta nada</p>";
+
   echo "<h2>Tipos Primitivos Compostos</h2>.<p>1. Array - para construir o Array é só usar [ ]. Ex: $ lista = [6, 2.5, 'Maria'], perceba que é possível misturar vários tipos escalares dentro de um mesmo array</p><p>2. Object - para fazer o objeto é necessário fazer uma classe (com atributos e tudo bonitinho) e depois usar um construtor para atribuí-la a uma váriável. Ex: </p><p>class Nome_do_objeto {</p><p> privare string $atributo;</p><p> } </p><p>variavelDoObj = new Nome_do_objeto;</p>";
   $lista = [6, 2.5, "Maria", 3, false];
   class Nome_do_objeto{
@@ -39,7 +41,9 @@
   echo "<p>Dei um var_dump e perceba que ele vai indicar o index de cada um, o valor e o tipo</p>";
   var_dump($variavelDoObj);
 
-  echo "<h3>Macetins</h3>.<p>1. Na dúvida do tipo de uma variável, você pode usar o comando var_dump, ele mostra o valor da variável e o tipo dela. Ex: acima declarei a variàvel '$ nome = Gustavo', vou colocar um comando var_dump ao lado:</p>";
+  echo "<h3>Macetins</h3>";
+  echo "<p>Concatenador de Strings é o ponto .</p>";
+  echo "<p>1. Na dúvida do tipo de uma variável, você pode usar o comando var_dump, ele mostra o valor da variável e o tipo dela. Ex: acima declarei a variàvel '$ nome = Gustavo', vou colocar um comando var_dump ao lado:</p>";
   var_dump($nome);
   echo "<p>Ele mostra o tipo: String e o número (7) que é o número de caracteres</p>";
   ?>
