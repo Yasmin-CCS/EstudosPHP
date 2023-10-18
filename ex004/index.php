@@ -13,7 +13,7 @@
     </h1>
   </header>
   <section>
-    <form action="cad.php" method="post">
+    <form action="cad.php" method="get">
       <label for="nome">Nome</label>
         <input type="text" name="nome" id="idNome">
       <label for="sobrenome">Sobreome</label>
